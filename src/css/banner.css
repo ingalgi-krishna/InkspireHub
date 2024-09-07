@@ -1,0 +1,78 @@
+:root {
+    --isabelline: #f2efeaff;
+    --coral: #fc7753ff;
+    --tiffany-blue: #66d7d1ff;
+    --english-violet: #403d58ff;
+    --straw: #dbd56eff;
+}
+
+.banner-container {
+    font-family: "Manrope", sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('../assets/landing.jpg'); */
+    /* background-color: aqua; */
+    /* background-size: cover; */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    
+    text-align: center;
+    padding: 10px;
+    /* vertical-align: middle; */
+    color: var(--tiffany-blue);
+}
+
+.banner-name {
+    padding-top: 50px;
+    font-size: 6rem;
+    color: var(--tiffany-blue);
+    /* margin-bottom: 30%; */
+}
+
+.banner-name span{
+    font-size: 6rem;
+    margin-bottom: 0%;
+    color: var(--coral);
+}
+
+.banner-tagline {
+    color: var(--isabelline);
+    margin-bottom: 30%;
+    font-size: 1.5rem;
+}
+
+ 
+.write-blog-button{
+    list-style: none;
+    font-weight: 600;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  background-color: var(--coral);
+  color:var(--isabelline);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.write-blog-button:hover{
+    color:var(--english-violet)
+}
+
+    
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banner-name {
+        font-size: 2rem;
+    }
+
+    .banner-tagline {
+        font-size: 1rem;
+    }
+}

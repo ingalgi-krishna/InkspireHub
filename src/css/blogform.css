@@ -1,0 +1,66 @@
+:root {
+    --isabelline: #f2efeaff;
+    --coral: #fc7753ff;
+    --tiffany-blue: #66d7d1ff;
+    --english-violet: #403d58ff;
+    --straw: #dbd56eff;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50PX auto;
+    padding: 20px;
+    border: 1px solid var(--isabelline);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container input[type="text"],
+  .form-container textarea {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--coral);
+    border-radius: 5px;
+  }
+  
+  .form-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form-container button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 95%;
+    padding: 10px;
+    background-color: var(--coral);
+    color: var(--isabelline);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container h1{
+    text-align: center;
+  }
+
+  .alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      max-width: 90%;
+    }
+  }
+  

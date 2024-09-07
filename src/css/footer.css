@@ -1,0 +1,108 @@
+/* src/Footer.css */
+:root {
+    --isabelline: #f2efeaff;
+    --coral: #fc7753ff;
+    --tiffany-blue: #66d7d1ff;
+    --english-violet: #403d58ff;
+    --straw: #dbd56eff;
+}
+
+.footer {
+    
+    font-family: "Manrope", sans-serif;
+    height: max-content;
+    position:static;
+    font-weight: 500;
+    background-color: var(--isabelline);
+    color:var(--english-violet);
+    text-align: left;
+    padding: 20px 0;
+    padding: 10px 3%;
+}
+
+.footer-content {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 0 20px;
+}
+
+.footer-section h4 {
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.footer-section a {
+    
+    color: var(--english-violet);
+    text-decoration: none;
+   
+    display: block;
+    transition: color 0.3s;
+}
+
+.footer-section span{
+    color: var(--coral);
+}
+
+.footer-section span2{
+    color: var(--coral);
+}
+
+.footer-section a:hover {
+    color:var(--coral);
+}
+
+.footer-bottom {
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #777;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom span {
+    font-weight: 700;
+   color: var(--tiffany-blue);
+}
+
+.footer-bottom span .hub{
+    font-weight: 700;
+   color: var(--coral);
+}
+
+button {
+    background-color: var(--isabelline);
+    color: var(--english-violet);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    color: var(--tiffany-blue);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,115 @@
+:root {
+    --isabelline: #f2efeaff;
+    --coral: #fc7753ff;
+    --tiffany-blue: #66d7d1ff;
+    --english-violet: #403d58ff;
+    --straw: #dbd56eff;
+}
+
+.navbar {
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--isabelline);
+    padding: 15px 15px;
+    position: relative;
+}
+
+.nav-logo {
+    color: var(--tiffany-blue);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.nav-logo .hub {
+    font-weight: 900;
+    color: var(--coral);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--english-violet);
+}
+
+.nav-links {
+    padding-top: 20px;
+    color: var(--english-violet);
+    margin-left: auto;
+    display: flex;
+}
+
+.nav-links li {
+    color: var(--english-violet);
+    font-weight: 800;
+    list-style: none;
+}
+
+.nav-links li button {
+    color: var(--english-violet);
+    font-weight: 800;
+    list-style: none;
+}
+
+.nav-links a {
+    font-weight: 800;
+    font-size: medium;
+    color: var(--english-violet);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button {
+    color: var(--isabelline);
+    font-weight: 800;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    border-bottom: 3px solid var(--tiffany-blue);
+}
+
+.nav-links a:hover {
+    border-bottom: 3px solid var(--tiffany-blue);
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--isabelline);
+        z-index: 1;
+        padding-top: 10px;
+    }
+
+    .nav-links.nav-links-mobile {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
